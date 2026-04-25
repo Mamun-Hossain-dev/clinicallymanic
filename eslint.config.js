@@ -3,6 +3,9 @@ import tseslint from '@typescript-eslint/eslint-plugin';
 import tsparser from '@typescript-eslint/parser';
 import prettier from 'eslint-plugin-prettier';
 import prettierConfig from 'eslint-config-prettier';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 export default [
     {
