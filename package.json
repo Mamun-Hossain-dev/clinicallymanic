@@ -4,9 +4,9 @@
   "description": "A production-ready, modular, and reusable Node.js Express starter package.",
   "main": "dist/server.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "start": "node dist/server.js",
-    "build": "npx prisma generate && tsc",
+    "dev": "node init && ts-node-dev --respawn --transpile-only src/server.ts",
+    "start": "node init && node dist/server.js",
+    "build": "node init && npx prisma generate && tsc",
     "postinstall": "prisma generate",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
